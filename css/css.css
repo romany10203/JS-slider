@@ -1,0 +1,84 @@
+
+
+.item
+
+{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.img-item
+{
+    transition: transform 1s 0.7s;
+}
+
+.item-caption h3
+{
+    opacity: 0;
+    transition: opacity 0.8s 0.4s;
+}
+
+.item-caption p
+{
+    opacity: 0;
+    transition: opacity 1s 0.7s;
+}
+
+.item-caption
+{
+    padding:10px;
+    background-color: #FFF;
+    text-align: center;
+    position: absolute;
+    width: 80%;
+    left:10%;
+    bottom:-50%;
+    transition: bottom 0.5s 0s;
+}
+
+.item:hover .item-caption
+{
+    bottom:20px;
+}
+
+.item:hover .img-item
+{
+    transform: scale(1.1,1.1);
+}
+
+.item:hover .item-caption h3
+{
+    opacity: 1;
+}
+
+.item:hover .item-caption p
+{
+    opacity: 1;
+}
+
+.lightbox-container
+{
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left:0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+}
+
+.lightbox-item
+{
+    width:50%;
+    height:85%;
+    background-size:100% 100%;
+}
+
+#close
+{
+    position: absolute;
+    top: 2%;
+    right:2%;
+}
+
